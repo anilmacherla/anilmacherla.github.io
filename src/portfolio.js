@@ -21,10 +21,10 @@ const greeting = {
   username: "Anil Macherla",
   title: "Hi all, I'm Anil Macherla",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with .Net/ JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.\n"
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Springboot/.Net/ JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.\n"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1nCZ0ytvoGXWee2jLKv1gqbbkIFKAM71C/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1NXjZNZgaJsvSKBliHgUkxsB3_2XIba4n/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -54,7 +54,7 @@ const skillsSection = {
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     ),
-    emoji("⚡ Expertise in creating .NET applications for various purposes")
+    emoji("⚡ Expertise in creating .NET and Springboot applications for various purposes")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -76,7 +76,7 @@ const skillsSection = {
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
-    },{
+    }, {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
     },
@@ -130,7 +130,7 @@ const educationInfo = {
       logo: require("./assets/images/neu_logo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "September 2022 - April 2024",
-      desc: "Participated in the research of web dev applications. Took courses about Software Engineering, Web Security, Operating Systems",
+      desc: "Participated in the research of web dev applications. Took courses about Distributed Systems, Software Engineering, Web Security, Operating Systems",
       descBullets: []
     },
     {
@@ -173,10 +173,11 @@ const workExperiences = {
       companylogo: require("./assets/images/Phillips.png"),
       date: "May 2023 – December 2023",
       desc: "Developed and maintained automated testing frameworks of Telemetry devices.",
-      descBullets: [
-        "Led development and automation of 20+ BDD test scenarios using SpecFlow.",
-        "Enhanced CI/CD integration in Azure DevOps, reducing deployment time by 30%.",
-        "Actively engaged in agile processes, including sprint planning, retrospectives, and scrum sessions, while effectively managing tickets in Jira and documenting in Confluence."
+      desc: [
+        // "Led development and automation of 20+ BDD test scenarios using SpecFlow.",
+        // "Enhanced CI/CD integration in Azure DevOps, reducing deployment time by 30%.",
+        // "Actively engaged in agile processes, including sprint planning, retrospectives, and scrum sessions, while effectively managing tickets in Jira and documenting in Confluence."
+        "I optimized integrated testing for Human Patient Monitoring (HPM) devices by automating 20+ BDD test cases using Gherkin, SpecFlow, .NET Core, C#, and RPC framework. This led to a 30% reduction in deployment time and resolved a critical performance bottleneck, cutting testing time by over 2 hours. My active participation in Agile methodologies also enhanced SDLC implementation and team collaboration."
       ]
     },
     {
@@ -184,22 +185,22 @@ const workExperiences = {
       company: "Medfar Solutions",
       companylogo: require("./assets/images/Medfar.jpeg"),
       date: "November 2021 – August 2022",
-      desc: "Led full-stack development of a scalable health records system for 170+ clinics, achieving a 40% productivity boost through API integration and UI enhancements. Leveraged .NET 5, ReactJS, and SQL Server, emphasizing TDD and Redux for efficient development.",
-      descBullets: [
-        "Utilized microservices, TDD, Redux, and Service Stack for efficient health records system.",
-        "Integrated DOCOMO APIs for error-free fax automation and a 40% boost in productivity."
-      ]
+      desc: "I led the full-stack development of a responsive healthcare product for 170+ clinics, utilizing NodeJS, TypeScript, and SQL Server. Through orchestrating Redux for state management in React, automating the fax module, collaborating on UI/UX designs, optimizing app architecture with AWS, and mentoring junior developers, I catalyzed significant improvements such as reducing server requests by 40%, boosting productivity by 60%, and enhancing user engagement by 20%. My skills include system optimization, Agile development, J2EE patterns, and maintaining coding standards through code reviews and defect investigations.",
+      // descBullets: [
+      //   "Utilized microservices, TDD, Redux, and Service Stack for efficient health records system.",
+      //   "Integrated DOCOMO APIs for error-free fax automation and a 40% boost in productivity."
+      // ]
     },
     {
       role: "Software Engineer",
       company: "Deloitte",
       companylogo: require("./assets/images/deloitte.jpeg"),
       date: "January 2019 – November 2021",
-      desc: "Transformed a global employee tracking app for 300+ clients using .Net MVC, jQuery, knockout.JS, and AJAX, achieving a 60% acceleration in response time, fortifying security with advanced techniques, and streamlining deployment with Docker and Kubernetes",
-      descBullets: [
-        "Accelerated application response time by 60% through the migration from Entity Framework ORM to Dapper.",
-        "Spearheaded cybersecurity enhancements, fortifying the app with advanced security techniques, including SonarQube and Fortify integration, leading to heightened encryption, authentication, and access controls"
-      ]
+      desc: "I have experience developing core banking functionalities using REST APIs and Microservices architecture in both .NET and Spring Boot, hosted on AWS EC2 instances.By enforcing Test Driven Development with JUnit and Mockito, utilizing Spring Data JPA for database interaction, and delivering interactive front- end components with JavaScript and AJAX, I ensured high- quality software with real - time data fetching and dynamic user experiences.Additionally, I spearheaded cybersecurity measures, leveraged AWS cloud services for scalability and security, configured Jenkins for continuous integration, and facilitated collaboration among cross - functional teams to align project goals effectively.",
+      // descBullets: [
+      //   "Accelerated application response time by 60% through the migration from Entity Framework ORM to Dapper.",
+      //   "Spearheaded cybersecurity enhancements, fortifying the app with advanced security techniques, including SonarQube and Fortify integration, leading to heightened encryption, authentication, and access controls"
+      // ]
     }
   ]
 };
@@ -295,7 +296,7 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
